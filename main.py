@@ -94,11 +94,11 @@ class Item(BaseModel):
 #     return {'status': 1, 'message': 'ok'}
 
 
-@app.get("/ip1/")
-def read_root1(request: Request):
+@app.get("/ip2/")
+def read_root2(request: Request):
     objects=[]
     # client_host = request.client.host
-    d= {'client_host1':'Private IP:172.31.27.168, Public IP: 18.60.55.247'}
+    d= {'client_host2':'Private IP:172.31.20.90, Public IP: 18.61.0.200'}
     objects.append(d)
     return objects
 
